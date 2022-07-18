@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">出勤率 BITI G1</string>
+    <string name="label_accountID">帐户ID:</string>
+    <string name="label_password">密码:</string>
+    <string name="label_submit">提交</string>
+    <string name="label_class">班级:</string>
+    <string name="label_start_date_and_time">开始日期和时间:</string>
+    <string name="label_duration">期间:</string>
+    <string name="label_this_is_student_menu_activity">这是学生菜单活动</string>
+    <string name="lecturer_main">Lecturer Main</string>
+    <string name="add_schedule">Add Schedule</string>
+    <string name="settings">settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="menu_gallery" />
+    <string name="menu_home" />
+    <string name="menu_slideshow" />
+</resources>

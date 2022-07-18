@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="my.edu.utem.ftmk.bitp3453.bitig1attendance">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BITIG1Attendance">
+        <activity
+            android:name=".BluetoothScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BarcodeScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".LecturerMenuActivity" />
+        <activity
+            android:name=".LecturerMainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_lecturer_main"
+            android:theme="@style/Theme.BITIG1Attendance.NoActionBar" />
+        <activity
+            android:name=".RoutingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScheduleEntryActivity"
+            android:parentActivityName=".LecturerMenuActivity" />
+        <activity
+            android:name=".StudentMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LecturerMenuActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity android:name=".LoginActivity" />
+    </application>
+
+</manifest>

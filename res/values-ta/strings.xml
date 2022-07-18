@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BITI G1 வருகை</string>
+    <string name="label_accountID">கணக்கு ஐடி:</string>
+    <string name="label_password">கடவுச்சொல்:</string>
+    <string name="label_submit">சமர்ப்பிக்க</string>
+    <string name="label_class">வகுப்பு:</string>
+    <string name="label_start_date_and_time">தொடக்க தேதி மற்றும் நேரம்:</string>
+    <string name="label_duration">கால அளவு:</string>
+    <string name="label_this_is_student_menu_activity">இது மாணவர் மெனு செயல்பாடு</string>
+    <string name="lecturer_main">Lecturer Main</string>
+    <string name="add_schedule">Add Schedule</string>
+    <string name="settings">settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="menu_gallery" />
+    <string name="menu_home" />
+    <string name="menu_slideshow" />
+</resources>

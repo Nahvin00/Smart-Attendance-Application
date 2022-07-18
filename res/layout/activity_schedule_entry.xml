@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_class"
+        android:labelFor="@+id/cmbClazzes"/>
+
+    <Spinner
+        android:id="@+id/cmbClazzes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Type:"
+        android:labelFor="@+id/rdgType"/>
+
+    <RadioGroup
+        android:id="@+id/rdgType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdbLecture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lecture"/>
+        <RadioButton
+            android:id="@+id/rdbLab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lab"/>
+        <RadioButton
+            android:id="@+id/rdbTutorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tutorial"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_start_date_and_time"
+        android:labelFor="@+id/txtStart"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select date and time"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_duration"
+        android:labelFor="@+id/txtDuration"/>
+
+    <EditText
+        android:id="@+id/txtDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:autofillHints="duration"/>
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_submit"/>
+
+</LinearLayout>
+
+</ScrollView>
